@@ -1,0 +1,181 @@
+body {
+  font-family: arial narrow, arial;
+  margin: 0;
+}
+
+
+h1, h2, h3, h4,
+h5, h6, p, ul, li {
+  margin-top: 0;
+  padding: 0;
+}
+
+article, aside, canvas,
+footer, header, main, section {
+  display: block;
+}
+
+/* DEMO HEADER */
+#toolbar {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    height: 36px;
+    overflow: hidden;
+    position: absolute;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    top: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+    #toolbar a {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.25em;
+        text-decoration: none;
+        font-weight: bold;
+        opacity: .5;
+    }
+
+        #toolbar a:hover {
+            opacity: 1;
+        }
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+/** clearfix **/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.container {
+    position: relative;
+}
+
+/* demo */
+
+.demo div:before {
+    background: red;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+ul#menu {
+    color: #fff;
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    left: 50px;
+}
+ul#menu li {
+    font: 16px/1em "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    border-left: 1px solid #fff;
+    display: block;
+    opacity: 0.5;
+    padding: 2em 0 .8em 1em;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+ul#menu li.active {
+    border-left: 3px solid #fff;
+    opacity: 1;
+    padding: 1.4em 0 1.4em 1em;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+a.js-nav-link:link {
+    display: block;
+    opacity: 1;
+    transition: all 0.25s ease-in-out 0s;
+}
+ul#menu li:hover{
+    opacity: 1;
+    transition: all 0.25s ease-in-out 0s;
+}
+a.js-nav-link.is-active:link {
+    opacity: 1;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+.section {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: all 1000ms cubic-bezier(0.55, 0.085, 0, 0.99) 0s;
+    text-align: center;
+}
+.section h1{
+    color: #FFF;
+    padding-top: 3em;
+    font-size: 3em;
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section1 {
+	background: #000 url(../images/section1.jpg) no-repeat top;
+	background-size: cover;
+}
+
+/* Section 2
+ * --------------------------------------- */
+#section2 {
+    background: #000 url(../images/section2.jpg) no-repeat top;
+    background-size: cover;
+}
+
+/* Section 3
+ * --------------------------------------- */
+#section3 {
+    background: #000 url(../images/section3.jpg) no-repeat top;
+    background-size: cover;
+}
+
+/* Section 4
+ * --------------------------------------- */
+#section4 {
+    background: #000 url(../images/section4.jpg) no-repeat top;
+    background-size: cover;
+}
+
+.footer {
+    background: linear-gradient(to bottom, transparent 0px, rgba(0, 0, 0, 0.75) 60%, #000 100%) repeat;
+    bottom: 0;
+    height: 20em;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+}

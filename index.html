@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta name="author" content="Weikai Wang">
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+	<title>Galaxy</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="toolbar">
+			<a href="">My Github</a>
+		</div>
+
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active">
+				<a href="#page1" class="js-nav-link">home</a>
+			</li>
+
+			<li data-menuanchor="page2">
+				<a href="#page2" class="js-nav-link">about</a>
+			</li>
+
+			<li data-menuanchor="page3">
+				<a href="#page3" class="js-nav-link">gallery</a>
+			</li>
+
+			<li data-menuanchor="page4">
+				<a href="#page4" class="js-nav-link">contact</a>
+			</li>
+
+			<li data-menuanchor="page5" class="active">
+				<a href="#page5" class="js-nav-link">others</a>
+			</li>
+		</ul>
+
+		<div id="pagepiling">
+			<div class="section" id="section1">
+				<h1>Section one</h1>
+			</div>
+
+			<div class="section" id="section2">
+				<h1>Section two</h1>
+			</div>
+
+			<div class="section" id="section3">
+				<h1>Section three</h1>
+			</div>
+
+			<div class="section" id="section4">
+				<h1>Section four</h1>
+			</div>
+
+			<div class="section" id="section5">
+				<h1>Section five</h1>
+			</div>
+		</div>
+
+		<div class="footer"></div>
+
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// plugin intialization
+			$('#pagepiling').pagepiling({
+				menu: '#menu',
+				anchors: ['page1', 'page2', 'page3', 'page4', 'page5'], // 页面数量
+				sectionsColor: ['white', 'white', 'white', 'white', 'black'], // 每个页面颜色
+				navigation: {
+					'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5']
+				},	
+
+			});
+		});
+	</script>
+</body>
+</html>
